@@ -1,0 +1,467 @@
+/* 	VaultedMail.com CSS
+    
+	All content, XHTML, CSS, images, and graphics are
+	Copyright (c) 2008 VaultedMail.com. All Rights Reserved.
+
+----------------------------------------------------------------------- */
+
+
+body { 
+	margin: 0; 
+	padding: 0;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	background: #f6fcdd;
+	text-align: center;
+	font-size: small; 
+	color: #666;
+	}
+
+p.access { display: none; }
+
+br.clear, div.clear, .clear { margin: 0; padding: 0; line-height: 0; clear: both; height: 0; line-height: 0; border: none; }
+
+p {  }
+
+h1, h2, h3, h4, h5, h6 { 
+	color: #00539d; }
+
+a { color: #00539d;  }
+a:hover { color: #006154; text-decoration: none; }
+
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+
+
+/* 	Wrappers
+----------------------------------------------------------------------- */
+
+#wrapper {
+	margin: 0 auto 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 770px;
+	background: url(/graphics/bg-content-sidebar.gif) repeat-y top left;
+	 }
+
+
+
+/* 	Header
+----------------------------------------------------------------------- */
+
+
+#header {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 770px;
+	height: 120px;
+	background: #00539d url(/graphics/bg-header.gif) no-repeat top left;
+	text-align: left;
+	 }
+	 
+#logo {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 220px;
+	height: 120px;
+	float: left;
+ }
+#logo h1 {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 220px;
+	height: 120px;
+	background: url(/graphics/logo-dn.gif) no-repeat top left;
+	 }
+#logo h1 a {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 220px;
+	height: 120px;
+	text-indent: -9999px;
+	text-decoration: none;
+	background: url(/graphics/logo-up.gif) no-repeat top left;
+	 }
+	
+#logo h1 a:hover { 
+	text-decoration: none;
+	background: none; }
+
+
+
+
+#top-nav {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 545px;
+	height: 120px;
+	float: left;
+ }
+
+#top-nav ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 545px;
+	height: 120px;
+ }
+
+#top-nav li {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 115px;
+	height: 120px;
+	list-style: none;
+	float: left;
+ }
+
+#top-nav li a {
+	display: block;
+	width: 115px;
+	height: 120px;
+	text-indent: -9999px;
+ }
+
+#top-nav li#visual-arts { width: 115px; }
+#top-nav li#visual-arts a {	width: 115px; }
+
+#top-nav li#dance { width: 127px; }
+#top-nav li.dance a { width: 127px; }
+
+#top-nav li#music { width: 120px; }
+#top-nav li#music a { width: 120px; }
+
+#top-nav li#theater { width: 98px; }
+#top-nav li#theater a { width: 98px; }
+
+#top-nav li#healing-arts { width: 85px; }
+#top-nav li#healing-arts a { width: 85px; }
+
+
+
+/* 	Content Wrapper
+----------------------------------------------------------------------- */
+
+#content {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 770px;
+	text-align: left;
+	 }
+
+
+/* 	Sidebar
+----------------------------------------------------------------------- */
+
+
+#sidebar {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 200px;
+	float: left;
+ }
+
+
+	#nav, #nav ul { /* all lists */
+	margin: 0;
+	padding: 0;
+	background: #d5e39d;
+		list-style: none;
+		float : left;
+		width : 200px;
+	}
+	
+	#nav li { /* all list items */
+		position : relative;
+		float : left;
+		line-height : 1.25em;
+		margin-bottom : -1px;
+		text-align: right;
+		width : 200px;
+	}
+	
+	#nav li ul { /* second-level lists */
+		position : absolute;
+		left: -999em;
+		margin-left : 11.05em;
+		margin-top : -1.35em;
+	}
+	
+	#nav li ul ul { /* third-and-above-level lists */
+		left: -999em;
+	}
+	
+	#nav li a {
+		width: 11em;
+		w\idth : 10em;
+		display : block;
+		color : black;
+		font-weight : bold;
+		text-decoration : none;
+		background-color : white;
+		border : 1px solid black;
+		padding : 0 0.5em;
+	}
+	
+	#nav li a:hover {
+		color : white;
+		background-color : black;
+	}
+	
+	#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+		left: -999em;
+	}
+	
+	#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { /* lists nested under hovered list items */
+		left: auto;
+	}
+	
+	#content {
+		margin-left : 12em;
+	}
+
+
+#side-nav {
+	margin: 0;
+	padding: 0;
+	background: #d5e39d;
+
+ }
+	/*	background: #c7b2d6; */
+
+#side-nav ul {
+	margin: 0;
+	padding: 10px 0;
+ }
+
+#side-nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+ }
+
+#side-nav li ul {
+	display: none;
+ }
+
+#side-nav li a {
+	margin: 0;
+	padding: 2px 10px;
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+	 }
+
+#side-nav li a:hover {
+	color: #e9fd9a;
+	background: #00539d;
+		 }
+
+
+#side-nav ul#side-section-header {
+	margin: 0;
+	padding: 10px 0 0 0;
+ }
+
+#side-nav ul#side-section-header li a {
+	margin: 0;
+	padding: 2px 10px;
+	display: block;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	 }
+
+#side-nav ul#side-section-header li a:hover {
+	color: #e9fd9a;
+	background: #00539d;
+		 }
+
+
+
+#side-register-online {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 200px;
+	height: 60px;
+ }
+#side-register-online h3 {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 200px;
+	height: 60px;
+	background: url(/graphics/register-online-dn.gif) no-repeat top left;
+	 }
+#side-register-online h3 a {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 200px;
+	height: 60px;
+	text-indent: -9999px;
+	text-decoration: none;
+	background: url(/graphics/register-online-up.gif) no-repeat top left;
+	 }
+	
+#side-register-online h3 a:hover { 
+	text-decoration: none;
+	background: none; }
+
+
+
+
+
+
+#side-current-events {
+	color: #fff;
+	text-align: center;
+	padding: 0 10px;
+	margin: 0; }
+
+#side-current-events p {
+	padding: 10px 0;
+	margin: 0; }
+
+
+
+
+
+
+
+/* 	Main Content
+----------------------------------------------------------------------- */
+
+
+#main-wrap {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 560px;
+	float: right;
+ }
+
+.main {
+	display: block;
+	margin: 0;
+	padding: 0;
+ }
+
+/* Home */ .main.id4 { padding: 0 0 0 0; }
+/* About */ .main.id2 { padding: 310px 0 0 0; background: url(/graphics/about.jpg) no-repeat top left; }
+/* Visual Arts */ .main.id3 { padding: 260px 0 0 0; background: url(/graphics/visual-arts.jpg) no-repeat top left; }
+/* Dance */ .main.id5 { padding: 250px 0 0 0; background: url(/graphics/dance.jpg) no-repeat top left; }
+/* Music */ .main.id6 { padding: 350px 0 0 0; background: url(/graphics/music.jpg) no-repeat top left; }
+/* Theater */ .main.id7 { padding: 270px 0 0 0; background: url(/graphics/theater.jpg) no-repeat top left; }
+/* Healing Arts  .main.id8 { padding: 250px 0 0 0; background: url(/graphics/healing-arts.jpg) no-repeat top left; }*/
+/* Faculty */ .main.id9 { }
+/* Calendar */ .main.id10 {}
+/* Contribute */ .main.id11 { padding: 250px 0 0 0; background: url(/graphics/home.jpg) no-repeat top left; }
+/* Contact */ .main.id12 { padding: 250px 0 0 0; background: url(/graphics/home.jpg) no-repeat top left; }
+
+
+
+
+#page-head { 
+	margin: 0;
+	padding: 10px 10px 10px 20px;
+ }
+#page-head h2 { margin: 0; padding: 0; }
+#page-head p { margin: 0; padding: 0; }
+
+
+.entry p {
+	margin: 0;
+	padding: 10px 20px;
+ }
+
+
+
+/* 	Footer
+----------------------------------------------------------------------- */
+
+
+#footer {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: #00539d;
+	text-align: center;
+ }
+
+#footer p {
+	margin: 0;
+	padding: 10px;
+	color: #cbe3f9;
+	font-weight: normal;
+	font-size: 11px;
+	letter-spacing: 0;
+ }
+
+#footer p a {
+	color: #cbe3f9;
+ }
+
+#footer p a:hover {
+	color: #fff;
+ }
+
+
+/* 	Copyright
+----------------------------------------------------------------------- */
+
+
+
+#copyright {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+ }
+
+#copyright h2 {
+	margin: 0;
+	padding: 10px;
+	color: #00539d;
+	font-weight: normal;
+	font-size: 11px;
+	letter-spacing: 0;
+ }
+
+#copyright h2 a {
+	color: #00539d;
+ }
+
+#copyright h2 a:hover {
+	color: #006154;
+ }
+
+
+
+
+
+

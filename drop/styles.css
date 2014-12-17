@@ -1,0 +1,78 @@
+
+a { color: #5C5C5C; text-decoration: underline;  }
+a:hover { color: #000000; text-decoration: none;  }
+
+
+#nav, #nav ul {
+font-family: Arial, Helvetica, sans-serif;
+	width: 150px;
+	list-style: none;
+	line-height: 1.2;
+	background: white;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+
+#nav a {
+	display: block;
+	text-decoration: none;
+	padding: 7px 15px 7px 2px;
+}
+
+#nav a.daddy {
+	background: url(left-column-arrow.gif) no-repeat right center;
+	
+}
+
+#nav li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	border-bottom: 1px solid #ccc;
+}
+
+#nav li ul {
+	position: absolute;
+	left: -999em;
+	width: 160px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	margin: -29px 0 0 150px;
+}
+
+#nav li li {
+	padding: 0;
+	width: 160px;
+	border-bottom: 1px solid #ccc;
+}
+
+#nav li ul a {
+	display: block;
+	text-decoration: none;
+	padding: 7px 15px 7px 10px;
+}
+
+#nav li ul ul {
+	margin: -29px 0 0 160px;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+	left: auto;
+}
+
+#nav li:hover, #nav li.sfhover  {
+background-color: #faf7d4;
+}
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+
+<!--  Outer Wrappers  -->
+<div id="outer-wrap">
+<div id="inner-wrap">
+
+<!--  Header  -->
+<div id="header">
+<p class="logo"><a href="http://www.shoreconnection.com" title="Shore Connection - Web Hosting, Design &amp; Development"><img src="/graphics/logo.gif" alt="Shore Connection - Web Hosting, Design &amp; Development" /></a></p>
+<ul>
+<li class="email"><a href="/email-login.php" title="Email Login" rel="external">Email Login</a></li>
+<li class="login"><a href="/web-login.php" title="Web Hosting Login" rel="external">Web Hosting Login</a></li>
+<li class="home"><a href="/index.php" title="Home">Home</a></li>
+</ul>
+<br class="clear" />
+</div>
+
+<!--  Navigation  -->
+<?php
+/*  ----------------------------------------------------------  CHECK DIRECTORY
+*/
+//  Snifs out the directory:
+$directories = explode("/", $_SERVER['PHP_SELF']);
+$directory = $directories[1];
+// If the directory isn't found or contains a dot (as in .html) it will be set to the default:
+if(!$directory OR strstr($directory, '.')){ $directory = "home"; }
+/*  ----------------------------------------------------------  END CHECK DIRECTORY
+*/
+
+// Just a shortcut so you can re-use the following text in your links.
+$active = ' class="active"';
+?>
+
+<div id="nav-<?=$directory; ?>">
+
+<ul id="nav">
+<li class="services"><a href="/services/" <?php  if($directory=="services"){ echo  $active; }  ?> title="Internet Services">Services</a></li>
+<li class="hosting"><a href="/products/" <?php  if($directory=="products"){ echo  $active; }  ?> title="Web Related Products">Products</a></li>
+<li class="design"><a href="/articles/" <?php  if($directory=="articles"){ echo  $active; }  ?> title="Industry Articles">Articles</a></li>
+<li class="seo"><a href="/company/" <?php  if($directory=="company"){ echo  $active; }  ?> title="About Shore Connection">Company</a></li>
+<li class="support"><a href="/support/" <?php  if($directory=="support"){ echo  $active; }  ?> title="Tutorials &amp; Help">Support</a></li>
+<li class="contact"><a href="/contact/" <?php  if($directory=="contact"){ echo  $active; }  ?> title="Contact Shore Connection">Contact</a></li>
+</ul>
+<br class="clear" />
+</div>
+
+
