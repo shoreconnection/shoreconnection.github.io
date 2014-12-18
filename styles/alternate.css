@@ -1,0 +1,50 @@
+
+/* 	ShoreConnection.com CSS
+    
+	All content, XHTML, CSS, images, and graphics are
+	Copyright (c) 2004 ShoreConnection.com. All Rights Reserved.
+
+----------------------------------------------------------------------- */
+
+
+body { 
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	text-align: left;
+	margin: 0;
+	padding: 10px;
+	background: #fff; 
+
+ }
+
+
+h1, p.access, p.access a { font-size: 0; line-height: 0; text-indent: -9999px; margin: 0; padding: 0; text-decoration: none; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+p { text-align: left; margin: 0; padding: 5px 0 10px 0;  }
+
+a { color: #336699; text-decoration: underline; border-bottom: 0; }
+a:hover { color: #73BF03; text-decoration: none; border-bottom: 0; }
+
+table, tr, td, th { text-align: left; vertical-align: top; margin: 0; padding: 0; border-collapse: collapse; }
+
+span { display: none;}
+
+br.clear, p.clear, .clear { margin: 0; padding: 0; font-size: 0; line-height: 0; clear: both; }
+
+.photo-left { float: left; padding: 0 5px 5px 0; }
+.photo-right { float: right; padding: 0 0 5px 5px; }
+img { border: 0; margin: 0; padding: 0; }
+
+form { margin: 0; padding: 0;   }
+
+#content-wrap { width: 650px; }
+
+#header p.logo img a { border: 0; }
+
